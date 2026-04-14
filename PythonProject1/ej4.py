@@ -3,7 +3,6 @@ from pathlib import Path
 def setup_environment():
     base = Path("Recetas")
 
-    # Define the structure based on the image in the PDF
     structure = {
         "Carnes": ["Entrecot al Malbec.txt", "Matambre a la Pizza.txt"],
         "Ensaladas": ["Ensalada Griega.txt", "Ensalada Mediterranea.txt"],
@@ -11,7 +10,6 @@ def setup_environment():
         "Postres": ["Compota de Manzana.txt", "Tarta de Frambuesa.txt"]
     }
 
-    # Create directories and dummy files
     if not base.exists():
         base.mkdir()
 
@@ -28,7 +26,6 @@ def setup_environment():
 
 if __name__ == "__main__":
     setup_environment()
-#this is the program
 import os
 from pathlib import Path
 import shutil
